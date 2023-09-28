@@ -1,0 +1,342 @@
+:root{
+    --color-dark-green:rgba(40, 125, 1, 0.963);
+    --color-dark-yellow:#f8c149;
+    --color-light-blue: #26b0e6;
+    --color-nav-bg:rgba(173, 249, 183, 0.977);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+  
+body{
+        background-color: rgba(0, 128, 0, 0.032);
+        font-family: Roboto,Inclusive Sans,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        
+    }
+
+header{
+    justify-content: space-between;
+    align-items: center;
+    gap:10rem;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    background-color: #fff;
+    padding:1rem;
+    display:flex;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: column; 
+    width:90%;
+    
+}
+
+.quick-contact{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(40, 125, 1, 0.963);
+    padding:20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+.quick-contact-elements , .image-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+
+#quick-email,
+#quick-phone{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap:9px;
+}
+
+
+.quick-contact img{
+    width:20px;
+}
+
+.quick-contact{
+    background-color: rgba(40, 125, 1, 0.963);
+    padding:20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+       color:white;
+
+}
+
+.quick-contact-mobile{
+    display:none;
+}
+
+#menu_toggle{
+    display:none
+}
+
+
+.logo{
+     width:300px;
+    padding:10px;
+}
+
+.logo img{
+    width:100%
+}
+
+.active{
+border-bottom: 2px solid #9cad8a;
+}
+
+ul{
+    display:flex;
+    gap:16px;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 9px;
+    border-radius: 7px;
+    transition: all .2s ease-in-out;
+    margin:30px;
+    margin-left:0px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding:9px 36px;
+    font-size: 20px;
+}
+
+
+ul li:active{
+    transform:scale(.9);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.219);
+
+}
+
+img{width:100%}
+
+.footer {
+    background-color: var(--color-dark-green); /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    margin-top:20px;
+}
+
+
+.footer-copyright {
+    margin-top: 20px;
+}
+
+.btn{
+    padding:10px;
+    margin-bottom:20px;
+    background-color: var(--color-dark-green);
+    color: aliceblue;
+    border:none;
+    border-radius:5px;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.358);
+    text-decoration: none;    
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 85, 16, 0.91); /* Blue overlay with opacity */
+    backdrop-filter:blur(3px);
+}
+
+/* Main section Unique to individual pages start here */
+
+.contact-bg{
+    width:100%;
+    height:20vh;
+    position:relative;
+    background-image: url('../images/sevices-header.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding:10px;
+    align-content: center;
+    
+}
+
+.contact-bg-text{
+    font-size:60px;
+    font-weight:900;
+    color:rgba(255, 255, 255, 0.778);
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    margin-top:30px;
+    top:40%;
+    font-family: Roboto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Your CSS styles for Android devices here */
+    @media screen and (max-width: 767px) {
+        
+   
+        header{
+            justify-content: space-between;
+        }
+            
+        .logo{
+            width:140px; 
+            padding:1px;
+        }
+        
+        ul{
+            flex-direction: column;
+            margin-top:40px;
+        }
+        
+        ul li{
+            padding:6px;
+            margin:10px ;
+            width:150px;    
+            text-align: center;
+            margin:10px auto;
+            
+            
+        }
+        
+        ul li a{
+            font-size: 13px;
+            
+        }
+        
+     #menu_toggle{
+        display:inline-block;
+        padding:10px;
+        margin-left:auto;
+        font-size:40px;
+        position: relative;
+        z-index:200;
+        font-family: cursive;
+}
+
+.navbar{
+    position: absolute;
+    opacity:0;
+    
+}
+
+.nav-bar-active{
+    opacity: 1;
+    transition: opacity 0.7s ease-in-out;
+    width:100%;
+    height:100%;
+    top:6rem;
+    left:0;
+    right:0;
+    background-color: rgba(247, 247, 255, 0.913);
+    z-index: 500;
+}
+
+.quick-contact{
+    border-radius: 0;
+}
+
+.quick-contact-mobile{
+    display:flex;
+
+}
+
+#nav_ul{
+    background: rgba(227, 242, 229, 0.929);
+    margin-top:0px;
+    height: 100vh;
+    font-weight: 500;
+}
+
+.nav-link{
+    margin-top:1rem;
+}
+
+.quick-contact-elements , .image-links{
+    gap:10px;
+    padding:10px;
+}
+
+#quick-email,
+#quick-phone{
+    gap:3px;
+    font-size: 10px;;
+}
+
+.quick-contact img{
+    width:15px;
+}
+
+.quick-contact{
+    padding:10px;
+    font-weight: 400;
+    width: 100%;
+}   
+
+.contact-bg{
+    width:100%;
+    height:30vh;
+    padding:9px;
+
+}
+
+.contact-bg-text{
+    top:10%;
+    font-size: 38px;}
+
+
+footer{
+    font-size: 14px;
+    margin:0;
+}
+
+    }
