@@ -58,19 +58,6 @@ function stopTimer() {
     clearInterval(timer);
 }
 // Event listeners
-
-// Manual navigation using previous button
-prevButton.addEventListener('click', () => {
-    prevVideo();
-    stopTimer();
-});
-
-// Manual navigation using next button
-nextButton.addEventListener('click', () => {
-    nextVideo();
-    stopTimer();
-});
-
 // Restart automatic video change when leaving the video container
 videoContainer.addEventListener('mouseleave', () => {
     startTimer();
@@ -99,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 750)
 
 });
-
 
 // Text that Shows on  videos carousel
 const qualities = document.querySelectorAll('.quality');
@@ -130,33 +116,6 @@ const observerSectionOne = new IntersectionObserver(handleIntersectionImage, {
   rootMargin: '10px',
   threshold: 0.2, // Trigger when 20% of the element is visible
 });
-
-
-// Function to handle the animation for first section text when elements become visible
-function handleIntersectionTxt(entries, observer) {
-  entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-          entry.target.classList.add('intro-active');
-      observer.unobserve(entry.target);
-    }
-});
-}
-
-// Create an Intersection Observer for text
-const observerSectionTwo = new IntersectionObserver(handleIntersectionTxt, {
-  root: null,
-  rootMargin: '10px',
-  threshold: .05, // Trigger when 20% of the element is visible
-});
-
-
-// Observe the intro text part
-const introSectionMsg = document.querySelector('.intro-msg');
-observerSectionOne.observe(introSectionMsg);
-
-// Observe the intro image part
-const introSectionImage = document.querySelector('.intro-image');
-observerSectionOne.observe(introSectionImage);
 
 
 //GSAP AND INTERSECTION FOR OUR PARTNERS LOGO CHANGE
