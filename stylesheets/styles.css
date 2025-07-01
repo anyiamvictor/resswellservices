@@ -24,16 +24,13 @@
     --bg--light: #ebac3710;
     --text: #c2bdbd;
     --accent: #00ff88;
+    --gd: #694902;
+
     --gd-light: #855d07;
     --glass-bg: rgba(255, 255, 255, 0.05);
     --border:1px solid rgba(248, 232, 232, 0.267);
     --service-card-shadow: 0 2px 10px rgba(252, 251, 251, 0.041);
     --shadow: 0 2px 15px rgba(248, 253, 180, 0.247);
-
-
-
-    
-
   }
 
 
@@ -552,16 +549,50 @@ padding:0px;
   
   /* ========== Menu Section ========== */
   .menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bg);
 
   }
-  .menu-category {
-  color: #2b6cb0;
-    margin-bottom: 2rem;
+
+  .menuWrapper{
+    display: flex;
+
   }
+
+  .menu-category {
+  color: var(--text);
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    width: fit-content;
+    position:relative;
+    overflow: hidden;
+
+  }
+
   .menu-category h3 {
-    color: #2b6cb0;
+    color: var(--text);
     margin-bottom: 0.5rem;
+    background-color: var(--gd);
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-cat-img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+  }
+
+  .menu-cat-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
   }
   .menu-list {
     list-style: none;
@@ -571,19 +602,115 @@ padding:0px;
   .menu-list li {
     margin-bottom: 0.5rem;
   }
-  .menu-btn,
-  .request-menu-btn {
+  .menu-dropdown
+{
     padding: 0.5rem 1.2rem;
     border: none;
-    background: #2b6cb0;
-    color: white;
-    border-radius: 5px;
+    color: var(--text);
+    padding:0;
     cursor: pointer;
   }
-  .request-menu-btn {
-    background: #3182ce;
+
+  .arrow {
+    display: inline-block;
+    margin-left: 6px;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--text); /* use your theme color */
   }
   
+  
+  .menu-footer-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  /* From Uiverse.io by vinodjangid07 */ 
+  .menu-request-btn {
+    position: relative;
+    width: 190px;
+    height: 50px;
+    border-radius: 45px;
+    border: none;
+    background-color: #f4b731; /* Gold */
+    color: var(--text);
+    box-shadow: 
+      0px 10px 10px rgba(244, 183, 49, 0.4) inset,  /* inner gold glow */
+      0px 5px 10px rgba(0, 0, 0, 0.2),              /* outer shadow */
+      0px -5px 10px rgba(255, 255, 255, 0.1) inset; /* top shine */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-request-btn::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+  }
+  
+  .menu-request-btn::after {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
+  }
+  
+  .menu-request-btn:hover {
+    animation: jello-horizontal 0.9s both;
+    background-color: #e0a800; /* darker gold on hover */
+  }
+  
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
   /* ========== Pricing Section ========== */
   .pricing-section {
     background: var(--bg);
