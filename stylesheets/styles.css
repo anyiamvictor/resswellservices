@@ -3,36 +3,39 @@
 :root {
     --bg: #ffffff;
     --bg--light: #f7dda51a;
-    --text: #222;
+    --text: #3a3838;
     --accent: #2e8b57;
     --overlay: #3c2c21c9;
     --db: #3c2c21c9;
     --gd: #f4b731;
     --gd-light: #f5d5905d;
-    --img-shadow: 0 10px 20px rgb(0, 0, 0);
     --glass-bg: rgba(255, 255, 255, 0.1); 
+    --border:1px solid rgba(12, 12, 12, 0.103);
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --service-card-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 
 
 
   }
   
   body.dark-theme {
-    --bg: #121212;
-    --text: #f4f4f4;
+    --bg: #1d1c1c;
+    --bg--light: #ebac3710;
+    --text: #c2bdbd;
     --accent: #00ff88;
-    --img-shadow: -2px 10px 20px rgba(228, 212, 123, 0.384); 
     --gd-light: #855d07;
     --glass-bg: rgba(255, 255, 255, 0.05);
+    --border:1px solid rgba(248, 232, 232, 0.267);
+    --service-card-shadow: 0 2px 10px rgba(252, 251, 251, 0.041);
+    --shadow: 0 2px 15px rgba(248, 253, 180, 0.247);
 
-    ;
+
+
+    
 
   }
-/* 
-  body:not(.dark-theme) .hero-overlay {
-    --overlay: #3c2c21c9
 
-
-  } */
 
 /* ========== Base Reset ========== */
 * {
@@ -156,20 +159,15 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  .section-lead {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 2rem;
-  }
-  
+ 
   /* ========== Header ========== */
   .site-header {
     background:var(--bg);
-    border-bottom: 1px solid #504a4abb;
     position: sticky;
     top: 0;
     height:150px;
     z-index: 1000;
+    box-shadow: var(--shadow);
   }
 
   /* Push down the  sections so it's not hidden under the fixed header */
@@ -353,7 +351,7 @@ width:200px
     height: 430px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: var(--img-shadow);
+    box-shadow: var(--shadow);
   }
   
   .about-image img {
@@ -445,7 +443,6 @@ width:200px
 
   .services-header{
     text-align: center;
-    margin-bottom: 2rem;
   }
   .services-cards {
     display: grid;
@@ -459,7 +456,7 @@ width:200px
     background: var(--bg);
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+    box-shadow: var(--service-card-shadow);
   }
   .service-card h3 {
     font-size: 1.5rem;
@@ -499,22 +496,58 @@ padding:0px;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-   width:50px;
-   height: auto;
-    margin: 30px;;
+   width:45px;
   }
 
   .service-icons  img{
   width: 100%;
   }
   /* ========== What Makes Resswell Different ========== */
-  .highlight-section .difference-list {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  .highlight-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .highlight-section  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .section-lead p{
+    margin-bottom: none;
+  }
+  
+
+  .difference-list{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 12px;
+    padding:4rem;
+  }
+
+
+  .diff-item {
+    display:flex;
+    flex-direction: column;
+    width:370px;
+    margin:20px;
+    padding: 20px;
+    border-radius:9px;
+    border:var(--border);
+    max-width: fit-content;
+
+  }
+  
   .diff-item h3 {
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .diff-item p {
+    font-size: 1rem;
   }
   
   /* ========== Menu Section ========== */
