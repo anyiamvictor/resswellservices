@@ -5,7 +5,11 @@
     --text: #222;
     --accent: #2e8b57;
     --overlay: #3c2c21c9;
-    --overlay2: #e0a47cc9;
+    --db: #3c2c21c9;
+    --gd: #f4b731;
+    --gd-light: #f5d5905d;
+
+
 
   }
   
@@ -13,7 +17,6 @@
     --bg: #121212;
     --text: #f4f4f4;
     --accent: #00ff88;
-    background: rgba(223, 216, 216, 0.089);
     /* --overlay2: #e0a47cc9; */
 /*  */
 
@@ -162,9 +165,10 @@
     height:150px;
     z-index: 1000;
   }
-  /* Push down the first section so it's not hidden under the fixed header */
+
+  /* Push down the  sections so it's not hidden under the fixed header */
 section{
-  padding-top: 250px; /* Adjust this based on your header height */
+  padding-top: 220px; /* Adjust this based on your header height */
 }
 
   
@@ -262,7 +266,7 @@ width:200px
   /* Fade-in keyframes */
 @keyframes fadeInOverlay {
   to {
-    opacity: 1;
+    opacity: 1 ;
   }
 }
 
@@ -341,6 +345,14 @@ width:200px
   }
   .feature h4 {
     margin-bottom: 0.5rem;
+  }
+
+  .feature{
+    background-color: var(--gd-light);
+    padding: 1rem;
+    border-radius: 5px;
+    ;
+
   }
   
   /* ========== Services Section ========== */
