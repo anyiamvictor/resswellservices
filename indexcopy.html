@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Resswell Catering</title>
+  </head>
+  <body>
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Your Script -->
+    <script src="script.js"></script>
+
+    <!-- Header section -->
+    <header class="site-header">
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="./assets/logo.png" alt="ressimg" />
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="mainNav" class="nav-links">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Button (Mobile Only) -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+          ☰
+        </button>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+          <div class="switch-track">
+            <div class="switch-thumb">
+              <span class="icon sun">☀️</span>
+              <span class="icon moon">🌑</span>
+              <!-- <img src="./assets/sun.jpg" class="icon sun" alt="Sun" />
+              <img src="./assets/moon.jpg" class="icon moon" alt="Moon" /> -->
+            </div>
+          </div>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Corporate Lunches, Reimagined</h1>
+          <p class="subtitle">
+            Delicious meals delivered daily to your office — so your team can
+            work happy, stay fueled, and enjoy every break.
+          </p>
+          <p class="contact-info">
+            <span><strong>📌</strong>Serving companies across Lagos</span>
+            <span><strong>📞</strong> 09023189602</span>
+            <span><strong>📧</strong> resswellservices@gmail.com</span>
+          </p>
+          <a
+            href="https://wa.me/2349023189602"
+            target="_blank"
+            class="whatsapp-btn"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"
+              alt="WhatsApp"
+            />
+            Request a free Tasting
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section id="about" class="about" data-aos="fade-up">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="./assets/ladysmilingjpeg.jpeg" alt="RessChef" />
+        </div>
+        <div class="about-content">
+          <h2>Who We Are</h2>
+          <p>
+            Resswell Services is a Lagos-based catering brand focused
+            exclusively on corporate lunch delivery and in-house cafeteria
+            management.
+          </p>
+          <p>
+            Our mission is to transform the lunch hour into something employees
+            look forward to. With a strong focus on taste, presentation, and
+            punctuality, we help businesses fuel productivity — one meal at a
+            time.
+          </p>
+
+          <div class="about-features">
+            <div class="feature">
+              <h4>Taste</h4>
+              <p>Delicious Meals</p>
+            </div>
+            <div class="feature">
+              <h4>Punctuality</h4>
+              <p>Always On Time</p>
+            </div>
+            <div class="feature">
+              <h4>Customization</h4>
+              <p>Tailored Menus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our services -->
+    <section id="services" class="services" data-aos="fade-up">
+      <div class="services-header">
+        <h2>Our Services</h2>
+        <p>
+          Comprehensive corporate catering solutions tailored to meet your
+          workplace dining needs.
+        </p>
+      </div>
+
+      <div class="services-cards">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <h3>Daily Corporate Lunch Delivery</h3>
+          <p>
+            Hot, tasty, and timely meals delivered directly to your office.
+            Perfect for teams of all sizes with flexible ordering options.
+          </p>
+          <ul>
+            <li>Punctual delivery</li>
+            <li>Temperature-controlled packaging</li>
+            <li>Flexible ordering system</li>
+          </ul>
+          <a href="#contact" class="learn-more">Learn More</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <h3>Cafeteria Management</h3>
+          <p>
+            We operate your staff cafeteria efficiently — from menu planning to
+            staffing and service.
+          </p>
+          <ul>
+            <li>Professional staff</li>
+            <li>Equipment provision</li>
+            <li>Customizable service models</li>
+          </ul>
+          <a href="#contact" class="learn-more">Learn More</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <h3>Event Catering</h3>
+          <p>
+            We cater for personal and company events like end of year party,
+            trainings, seminars, team bonding, weddings and dedications.
+          </p>
+          <ul>
+            <li>Corporate events</li>
+            <li>Private celebrations</li>
+            <li>Team building activities</li>
+          </ul>
+          <a href="#contact" class="learn-more">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- why resswell -->
+    <section id="why-resswell" class="highlight-section" data-aos="fade-up">
+      <h2>What Makes Resswell Different?</h2>
+      <p class="section-lead">
+        Our promise is simple: Great food, hassle-free service, happy teams.
+      </p>
+
+      <div class="difference-list">
+        <div class="diff-item">
+          <h3>We prioritize taste in every dish</h3>
+          <p>
+            Our chefs are passionate about creating delicious meals that your
+            team will look forward to every day.
+          </p>
+        </div>
+
+        <div class="diff-item">
+          <h3>We deliver on time, every time</h3>
+          <p>
+            Punctuality is our priority. Your team's lunch will always arrive
+            when expected, allowing for proper planning.
+          </p>
+        </div>
+
+        <div class="diff-item">
+          <h3>We customize meals to suit your staff</h3>
+          <p>
+            We create menus that accommodate dietary preferences and
+            restrictions of your team.
+          </p>
+        </div>
+
+        <div class="diff-item">
+          <h3>We offer flexible billing: daily or monthly</h3>
+          <p>
+            Choose the payment schedule that works best for your company's
+            accounting processes.
+          </p>
+        </div>
+
+        <div class="diff-item">
+          <h3>We respond fast to feedback</h3>
+          <p>
+            Your satisfaction matters. We actively seek and quickly respond to
+            feedback to improve our service.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu-section" data-aos="fade-up">
+      <h2>Menu Samples</h2>
+      <p class="section-lead">
+        Explore our featured dishes, crafted with fresh ingredients and culinary
+        expertise.
+      </p>
+
+      <!-- Signature Rice Dishes -->
+      <div class="menu-category">
+        <h3>Signature Rice Dishes</h3>
+        <ul class="menu-list">
+          <li>
+            <strong>Party Jollof Rice</strong>
+            <p>Our signature smoky jollof rice with a rich tomato base</p>
+          </li>
+          <li>
+            <strong>Coconuty Rice</strong>
+            <p>Fragrant rice cooked in coconut milk with herbs</p>
+          </li>
+          <li>
+            <strong>Fiesta Fried Rice</strong>
+            <p>Colorful vegetable fried rice with a Nigerian twist</p>
+          </li>
+        </ul>
+        <button class="menu-btn">View Details</button>
+      </div>
+
+      <!-- Pasta & Specialty -->
+      <div class="menu-category">
+        <h3>Pasta & Specialty</h3>
+        <ul class="menu-list">
+          <li>
+            <strong>Jolly Jollof Pasta</strong>
+            <p>Pasta cooked in our signature jollof sauce</p>
+          </li>
+          <li>
+            <strong>Asun Jollof</strong>
+            <p>Spicy peppered goat meat with jollof rice</p>
+          </li>
+          <li>
+            <strong>Pasta Primavera</strong>
+            <p>Fresh vegetable pasta with light cream sauce</p>
+          </li>
+        </ul>
+        <button class="menu-btn">View Details</button>
+      </div>
+
+      <!-- Soups & Swallows -->
+      <div class="menu-category">
+        <h3>Soups & Swallows</h3>
+        <ul class="menu-list">
+          <li>
+            <strong>Calabar Afang Soup</strong>
+            <p>Traditional Cross River soup with vegetables</p>
+          </li>
+          <li>
+            <strong>Egusi Soup</strong>
+            <p>Classic Nigerian melon seed soup with assorted meat</p>
+          </li>
+          <li>
+            <strong>Pounded Yam</strong>
+            <p>Smooth, stretchy traditional swallow</p>
+          </li>
+        </ul>
+        <button class="menu-btn">View Details</button>
+      </div>
+
+      <!-- Footer Note -->
+      <div class="menu-footer-note">
+        <p>
+          Our menus rotate weekly and can be customized to accommodate dietary
+          restrictions and preferences.
+        </p>
+        <button class="request-menu-btn">Request Full Menu</button>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing-section" data-aos="fade-up">
+      <h2>Pricing</h2>
+      <p class="section-lead">
+        Transparent and flexible pricing options to suit your company's needs.
+      </p>
+
+      <!-- Base Pricing -->
+      <div class="pricing-main">
+        <h3>₦4,000 <span>/meal per person</span></h3>
+        <p>All-inclusive pricing with no hidden fees</p>
+      </div>
+
+      <!-- Volume Discounts -->
+      <div class="volume-discounts"></div>
+      <div class="pricing-discounts">
+        <h4>Volume Discounts</h4>
+        <ul>
+          <li><strong>20+ meals daily:</strong> Special discounted rates</li>
+          <li><strong>Monthly subscription:</strong> Additional savings</li>
+          <li>
+            <strong>Long-term contracts:</strong> Custom pricing available
+          </li>
+        </ul>
+      </div>
+
+      <!-- What's Included -->
+      <div class="pricing-includes">
+        <h4>What's Included</h4>
+        <ul>
+          <li>Main dish with sides</li>
+          <li>Quality disposable packaging</li>
+          <li>Delivery to your office</li>
+          <li>Menu rotation</li>
+        </ul>
+      </div>
+
+      <!-- Add-on Options -->
+      <div class="pricing-addons">
+        <h4>Add-on Options</h4>
+
+        <div class="addon-category">
+          <h5>Additional Protein</h5>
+          <ul>
+            <li>Extra Chicken — <strong>₦1,000</strong></li>
+            <li>Extra Fish — <strong>₦1,200</strong></li>
+            <li>Extra Beef — <strong>₦1,000</strong></li>
+          </ul>
+        </div>
+
+        <div class="addon-category">
+          <h5>Beverages</h5>
+          <ul>
+            <li>Soft Drinks — <strong>₦300</strong></li>
+            <li>Bottled Water — <strong>₦200</strong></li>
+            <li>Fresh Juice — <strong>₦500</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="pricing-cta">
+        <button class="quote-btn">Request Custom Quote</button>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="contact-section" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p>Have questions or ready to get started? We’d love to hear from you.</p>
+      <div class="contact-info">
+        <p><strong>📍</strong> Lagos, Nigeria</p>
+        <p><strong>📞</strong> 09023189602</p>
+        <p>
+          <strong>📧</strong>
+          <a href="mailto:resswellservices@gmail.com"
+            >resswellservices@gmail.com</a
+          >
+        </p>
+      </div>
+      <form
+        class="contact-form"
+        action="mailto:resswellservices@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Resswell Services. All rights reserved.</p>
+        <p>
+          <a href="#home">Home</a> | <a href="#about">About</a> |
+          <a href="#services">Services</a> | <a href="#menu">Menu</a> |
+          <a href="#pricing">Pricing</a> |
+          <a href="#contact">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
