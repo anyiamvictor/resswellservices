@@ -8,11 +8,6 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
 
     <title>Resswell Catering</title>
   </head>
@@ -70,13 +65,20 @@
             Delicious meals delivered daily to your office — so your team can
             work happy, stay fueled, and enjoy every break.
           </p>
-          <p class="contact-info">
-            <span>
-              <strong>📌</strong>Serving companies across Lagos<br
-            /></span>
-            <span> <strong>📞</strong> 09023189602<br /></span>
-            <span> <strong>📧</strong> resswellservices@gmail.com</span>
-          </p>
+          <div class="contact-info">
+            <span class="contact-info-item">
+              <p><img src="./assets/locaton.svg" alt="location" /></p>
+              <p>Serving companies across Lagos</p>
+            </span>
+            <span class="contact-info-item">
+              <img src="./assets/phone.svg" alt="phone" />
+              <p>09023189602</p>
+            </span>
+            <span class="contact-info-item">
+              <img src="./assets/mail.svg" alt="mail" />
+              <p>resswellservices@gmail.com</p>
+            </span>
+          </div>
           <a
             href="https://wa.me/2349023189602"
             target="_blank"
@@ -144,6 +146,9 @@
       <div class="services-cards">
         <!-- Service 1 -->
         <div class="service-card">
+          <div class="service-icons">
+            <img src="./assets/clock.svg" alt="clock" />
+          </div>
           <h3>Daily Corporate Lunch Delivery</h3>
           <p>
             Hot, tasty, and timely meals delivered directly to your office.
@@ -154,11 +159,16 @@
             <li>Temperature-controlled packaging</li>
             <li>Flexible ordering system</li>
           </ul>
-          <a href="#contact" class="learn-more">Learn More</a>
+          <a href="#contact" class="learn-more"
+            >Learn More <span class="arrow"> &rarr;</span>
+          </a>
         </div>
 
         <!-- Service 2 -->
         <div class="service-card">
+          <div class="service-icons">
+            <img src="./assets/cafeteria.svg" alt="Cafeteria" />
+          </div>
           <h3>Cafeteria Management</h3>
           <p>
             We operate your staff cafeteria efficiently — from menu planning to
@@ -169,11 +179,16 @@
             <li>Equipment provision</li>
             <li>Customizable service models</li>
           </ul>
-          <a href="#contact" class="learn-more">Learn More</a>
+          <a href="#contact" class="learn-more"
+            >Learn More <span class="arrow"> &rarr;</span></a
+          >
         </div>
 
         <!-- Service 3 -->
         <div class="service-card">
+          <div class="service-icons">
+            <img src="./assets/chef-icon.svg" alt="chef" />
+          </div>
           <h3>Event Catering</h3>
           <p>
             We cater for personal and company events like end of year party,
@@ -184,7 +199,9 @@
             <li>Private celebrations</li>
             <li>Team building activities</li>
           </ul>
-          <a href="#contact" class="learn-more">Learn More</a>
+          <a href="#contact" class="learn-more"
+            >Learn More <span class="arrow"> &rarr;</span></a
+          >
         </div>
       </div>
     </section>
