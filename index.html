@@ -272,80 +272,77 @@
     </section>
 
     <!-- Menu -->
+
     <section id="menu" class="menu-section" data-aos="fade-up">
       <h2>Menu Samples</h2>
       <p class="section-lead">
         Explore our featured dishes, crafted with fresh ingredients and culinary
         expertise.
       </p>
+
       <div class="menuWrapper">
         <!-- Signature Rice Dishes -->
         <div class="menu-category">
           <h3>Signature Rice Dishes</h3>
-          <div class="menu-cat-img">
-            <img src="./assets/ladysmilingjpeg.jpeg" alt="Rice" />
-          </div>
-          <ul class="menu-list">
-            <li>
-              <strong>Party Jollof Rice</strong>
-              <p>Our signature smoky jollof rice with a rich tomato base</p>
-            </li>
-            <li>
-              <strong>Coconuty Rice</strong>
-              <p>Fragrant rice cooked in coconut milk with herbs</p>
-            </li>
-            <li>
-              <strong>Fiesta Fried Rice</strong>
-              <p>Colorful vegetable fried rice with a Nigerian twist</p>
-            </li>
-          </ul>
-          <span class="menu-dropdown"> <span class="arrow"></span></span>
+          <p>
+            Our signature rice dishes are the heart of our menu, featuring rich,
+            flavorful jollof rice and more. Perfect for any occasion.
+          </p>
+          <button
+            class="menu-view-btn"
+            data-title="Signature Rice Dishes"
+            data-img="./assets/jollofrice.jpeg"
+            data-items='[{"title":"Party Jollof Rice","desc":"Our signature smoky jollof rice with a rich tomato base"},{"title":"Coconuty Rice","desc":"Fragrant rice cooked in coconut milk with herbs"},{"title":"Fiesta Fried Rice","desc":"Colorful vegetable fried rice with a Nigerian twist"}]'
+          >
+            View Details
+          </button>
         </div>
 
         <!-- Pasta & Specialty -->
         <div class="menu-category">
           <h3>Pasta & Specialty</h3>
-          <div class="menu-cat-img">
-            <img src="./assets/ladysmilingjpeg.jpeg" alt="Pasta" />
-          </div>
-          <ul class="menu-list">
-            <li>
-              <strong>Jolly Jollof Pasta</strong>
-              <p>Pasta cooked in our signature jollof sauce</p>
-            </li>
-            <li>
-              <strong>Asun Jollof</strong>
-              <p>Spicy peppered goat meat with jollof rice</p>
-            </li>
-            <li>
-              <strong>Pasta Primavera</strong>
-              <p>Fresh vegetable pasta with light cream sauce</p>
-            </li>
-          </ul>
-          <span class="menu-dropdown"> <span class="arrow"></span></span>
+          <p>
+            From classic pasta dishes to unique specialties, our pasta menu
+            offers something for every palate. Perfect for a quick lunch or a
+            hearty meal.
+          </p>
+          <button
+            class="menu-view-btn"
+            data-title="Pasta & Specialty"
+            data-img="./assets/pasta.jpg"
+            data-items='[{"title":"Jolly Jollof Pasta","desc":"Pasta cooked in our signature jollof sauce"},{"title":"Asun Jollof","desc":"Spicy peppered goat meat with jollof rice"},{"title":"Pasta Primavera","desc":"Fresh vegetable pasta with light cream sauce"}]'
+          >
+            View Details
+          </button>
         </div>
 
         <!-- Soups & Swallows -->
         <div class="menu-category">
           <h3>Soups & Swallows</h3>
+          <p>
+            Our soups are made with traditional recipes and fresh ingredients,
+            served with a variety of swallows. Perfect for a comforting meal.
+          </p>
+          <button
+            class="menu-view-btn"
+            data-title="Soups & Swallows"
+            data-img="./assets/afangsoup.jpeg"
+            data-items='[{"title":"Calabar Afang Soup","desc":"Traditional Cross River soup with vegetables"},{"title":"Egusi Soup","desc":"Classic Nigerian melon seed soup with assorted meat"},{"title":"Pounded Yam","desc":"Smooth, stretchy traditional swallow"}]'
+          >
+            View Details
+          </button>
+        </div>
+      </div>
+
+      <!-- Global Overlay -->
+      <div id="menuOverlay" class="menu-overlay hidden">
+        <div class="overlay-content">
+          <h3 id="overlay-title"></h3>
           <div class="menu-cat-img">
-            <img src="./assets/ladysmilingjpeg.jpeg" alt="swallow" />
+            <img id="overlay-img" src="" alt="Menu Image" />
           </div>
-          <ul class="menu-list">
-            <li>
-              <strong>Calabar Afang Soup</strong>
-              <p>Traditional Cross River soup with vegetables</p>
-            </li>
-            <li>
-              <strong>Egusi Soup</strong>
-              <p>Classic Nigerian melon seed soup with assorted meat</p>
-            </li>
-            <li>
-              <strong>Pounded Yam</strong>
-              <p>Smooth, stretchy traditional swallow</p>
-            </li>
-          </ul>
-          <span class="menu-dropdown"> <span class="arrow"></span></span>
+          <ul id="overlay-list" class="menu-list"></ul>
+          <button id="closeOverlay" class="close-overlay">Close</button>
         </div>
       </div>
 
@@ -356,8 +353,8 @@
           restrictions and preferences.
         </p>
         <a href="https://wa.me/2349023189602" class="menu-request-btn"
-          >Request Full Menu
-        </a>
+          >Request Full Menu</a
+        >
       </div>
     </section>
 
@@ -374,28 +371,30 @@
         <p>All-inclusive pricing with no hidden fees</p>
       </div>
 
-      <!-- Volume Discounts -->
-      <div class="volume-discounts"></div>
-      <div class="pricing-discounts">
-        <h4>Volume Discounts</h4>
-        <ul>
-          <li><strong>20+ meals daily:</strong> Special discounted rates</li>
-          <li><strong>Monthly subscription:</strong> Additional savings</li>
-          <li>
-            <strong>Long-term contracts:</strong> Custom pricing available
-          </li>
-        </ul>
-      </div>
+      <div class="pricing-benefits">
+        <!-- Volume Discounts -->
+        <div class="volume-discounts"></div>
+        <div class="pricing-discounts">
+          <h4>Volume Discounts</h4>
+          <ul>
+            <li><strong>20+ meals daily:</strong> Special discounted rates</li>
+            <li><strong>Monthly subscription:</strong> Additional savings</li>
+            <li>
+              <strong>Long-term contracts:</strong> Custom pricing available
+            </li>
+          </ul>
+        </div>
 
-      <!-- What's Included -->
-      <div class="pricing-includes">
-        <h4>What's Included</h4>
-        <ul>
-          <li>Main dish with sides</li>
-          <li>Quality disposable packaging</li>
-          <li>Delivery to your office</li>
-          <li>Menu rotation</li>
-        </ul>
+        <!-- What's Included -->
+        <div class="pricing-includes">
+          <h4>What's Included</h4>
+          <ul>
+            <li>Main dish with sides</li>
+            <li>Quality disposable packaging</li>
+            <li>Delivery to your office</li>
+            <li>Menu rotation</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Add-on Options -->
