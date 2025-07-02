@@ -131,4 +131,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const firstId = sections[0]?.getAttribute("id");
   if (firstId) activateLinkById(firstId);
+
+  // Form Validation for Email Confirmation
+  const form = document.querySelector(".contact-form");
+  form.addEventListener("submit", function (e) {
+    const email = document.getElementById("email").value;
+    const confirmEmail = document.getElementById("confirm_email").value;
+
+    if (email !== confirmEmail) {
+      e.preventDefault();
+
+      const modal = document.getElementById("emailMismatchModal");
+      modal.classList.add("show");
+
+      setTimeout(() => {
+        modal.classList.remove("show");
+      }, 4000);
+    }
+  });
+
+  // Back to Top Button
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
