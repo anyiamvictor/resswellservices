@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.getElementById("mainNav");
   btn?.addEventListener("click", () => {
     nav.classList.toggle("show");
+    btn.classList.toggle("active");
   });
 
   // Theme Toggle
@@ -132,24 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const firstId = sections[0]?.getAttribute("id");
   if (firstId) activateLinkById(firstId);
 
-  // Form Validation for Email Confirmation
-  const form = document.querySelector(".contact-form");
-  form.addEventListener("submit", function (e) {
-    const email = document.getElementById("email").value;
-    const confirmEmail = document.getElementById("confirm_email").value;
-
-    if (email !== confirmEmail) {
-      e.preventDefault();
-
-      const modal = document.getElementById("emailMismatchModal");
-      modal.classList.add("show");
-
-      setTimeout(() => {
-        modal.classList.remove("show");
-      }, 4000);
-    }
-  });
-
   // Back to Top Button
   const backToTopBtn = document.getElementById("backToTop");
 
@@ -163,5 +146,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
   backToTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  // ✅ Testimonial Carousel with Reverse Scroll
+  // Ping-pong auto-scroll
+  const track = document.querySelector(".testimonial-track");
+  const container = document.querySelector(".testimonial-carousel");
+
+  const scrollAmount = window.innerWidth <= 480 ? 2 : 1;
+  const scrollDelay = 20;
+  let direction = 1; // 1 = forward, -1 = backward
+
+  function startAutoScroll() {
+    return setInterval(() => {
+      container.scrollLeft += scrollAmount * direction;
+
+      const buffer = 5; //
+      const atEnd =
+        container.scrollLeft + container.offsetWidth >=
+        container.scrollWidth - buffer;
+
+      const atStart = container.scrollLeft <= 0;
+
+      if (atEnd) direction = -1;
+      if (atStart) direction = 1;
+    }, scrollDelay);
+  }
+
+  let autoScroll = startAutoScroll();
+
+  // Pause on image hover
+  const images = document.querySelectorAll(".testimonial-track img");
+
+  images.forEach((img) => {
+    img.addEventListener("mouseenter", () => {
+      clearInterval(autoScroll);
+      const scaleSize = window.innerWidth <= 768 ? 1.9 : 1.1;
+      img.style.transform = `scale(${scaleSize})`;
+      img.style.zIndex = "10";
+    });
+
+    img.addEventListener("mouseleave", () => {
+      img.style.transform = "";
+      img.style.zIndex = "";
+      autoScroll = startAutoScroll();
+    });
+  });
+  document.querySelector(".zoom-backdrop").addEventListener("click", () => {
+    document
+      .querySelectorAll(".zoomed")
+      .forEach((img) => img.classList.remove("zoomed"));
+    document.body.classList.remove("zooming");
   });
 });

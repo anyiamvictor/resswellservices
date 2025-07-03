@@ -17,7 +17,6 @@
 
     <!-- Your Script -->
     <script src="script.js"></script>
-
     <!-- Header section -->
     <header class="site-header">
       <div class="container">
@@ -34,25 +33,35 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="nav-but">
+          <!-- Hamburger Button (Mobile Only) -->
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
 
-        <!-- Hamburger Button (Mobile Only) -->
-        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
-          ☰
-        </button>
-
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
-          <div class="switch-track">
-            <div class="switch-thumb">
-              <span class="icon sun">☀️</span>
-              <span class="icon moon">🌑</span>
-              <!-- <img src="./assets/sun.jpg" class="icon sun" alt="Sun" />
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Toggle Theme"
+          >
+            <div class="switch-track">
+              <div class="switch-thumb">
+                <span class="icon sun"
+                  ><img src="./assets/sun.svg" alt="sun"
+                /></span>
+                <span class="icon moon"
+                  ><img src="./assets/moon.svg" alt=""
+                /></span>
+                <!-- <img src="./assets/sun.jpg" class="icon sun" alt="Sun" />
               <img src="./assets/moon.jpg" class="icon moon" alt="Moon" /> -->
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -472,70 +481,69 @@
       </div>
     </section>
 
-    <section id="contact" class="contact-section" data-aos="fade-up">
-      <!-- Contact -->
-      <h2>Contact Us</h2>
-      <p>Have questions or ready to get started? We’d love to hear from you.</p>
-
-      <form
-        class="contact-form"
-        action="https://formsubmit.co/resswellservices@gmail.com"
-        method="POST"
-      >
-        <div class="form-row">
-          <div class="form-group">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              required
-            />
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonial-section" data-aos="fade-up">
+      <h2>What Our Clients Are Saying</h2>
+      <p>Real feedback from happy clients who trust us to fuel their teams.</p>
+      <div class="testimo">
+        <div class="gesture">
+          <img src="./assets/boy.png" alt="boy" />
+        </div>
+        <div class="testimonial-wrapper">
+          <div class="testimonial-carousel-wrapper">
+            <div class="testimonial-carousel">
+              <div class="testimonial-track">
+                <div class="testimonial-item">
+                  <img src="./assets/review1.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review2.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review3.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review4.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review5.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review6.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review7.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review8.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review9.jpeg" alt="Client feedback" />
+                </div>
+                <div class="testimonial-item">
+                  <img src="./assets/review10.jpeg" alt="Client feedback" />
+                </div>
+                <div>
+                  <img src="./assets/review11.jpeg" alt="Client feedback" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your Email"
-              required
-            />
+
+          <div class="trusted-companies">
+            <h3>Trusted by forward-thinking companies</h3>
+            <ul>
+              <li><img src="./assets/tek.png" alt="NovaCorp" /></li>
+              <li><img src="./assets/sparkles.png" alt="ThinkTech" /></li>
+              <li>
+                <img src="./assets/OvuaComp_logo_black.png" alt="PixelRise" />
+              </li>
+            </ul>
           </div>
         </div>
 
-        <input
-          type="email"
-          name="confirm_email"
-          id="confirm_email"
-          placeholder="Confirm Email"
-          required
-        />
-
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="4"
-          required
-        ></textarea>
-
-        <!-- Honeypot field (hidden from humans) -->
-        <input type="text" name="_honey" style="display: none" />
-
-        <!-- CAPTCHA protection (from FormSubmit) -->
-        <input type="hidden" name="_captcha" value="true" />
-
-        <!-- Redirect after submit -->
-        <input
-          type="hidden"
-          name="_next"
-          value="https://yourdomain.com/thank-you.html"
-        />
-
-        <button type="submit">Send Message</button>
-      </form>
-
-      <div id="emailMismatchModal" class="modal hidden">
-        <div class="modal-content">
-          <p>Emails do not match. Please check again.</p>
+        <div class="gesture">
+          <img src="./assets/girl.png" alt="girl" />
         </div>
       </div>
     </section>
