@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.classList.toggle("active");
   });
 
+  // Image swapper
+  function updateThemeImages() {
+    const isDark = document.body.classList.contains("dark-theme");
+    document.querySelectorAll(".theme-img").forEach((img) => {
+      const newSrc = isDark
+        ? img.getAttribute("data-img-dark")
+        : img.getAttribute("data-img-light");
+      if (newSrc) img.setAttribute("src", newSrc);
+    });
+  }
+
   // Theme Toggle
   const themeToggle = document.getElementById("themeToggle");
   const savedTheme = localStorage.getItem("theme");
@@ -18,11 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("light-theme");
     document.body.classList.remove("dark-theme");
   }
+  updateThemeImages();
 
   themeToggle?.addEventListener("click", () => {
     const isDark = document.body.classList.toggle("dark-theme");
     document.body.classList.toggle("light-theme", !isDark);
     localStorage.setItem("theme", isDark ? "dark" : "light");
+    updateThemeImages();
   });
 
   // AOS Init

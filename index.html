@@ -12,11 +12,6 @@
     <title>Resswell Catering</title>
   </head>
   <body>
-    <!-- AOS Library -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- Your Script -->
-    <script src="script.js"></script>
     <!-- Header section -->
     <header class="site-header">
       <div class="container">
@@ -69,7 +64,7 @@
     <section id="home" class="hero">
       <div class="hero-overlay">
         <div class="hero-content">
-          <h1>Corporate Lunches, Reimagined</h1>
+          <h1>Corporate Lunch, Reimagined</h1>
           <p class="subtitle">
             Delicious meals delivered daily to your office — so your team can
             work happy, stay fueled, and enjoy every break.
@@ -165,7 +160,7 @@
           </p>
           <ul>
             <li>Punctual delivery</li>
-            <li>Temperature-controlled packaging</li>
+            <li>Durable packaging</li>
             <li>Flexible ordering system</li>
           </ul>
         </div>
@@ -232,7 +227,7 @@
           <h3>We deliver on time, every time</h3>
           <p>
             Punctuality is our priority. Your team's lunch will always arrive
-            when expected, allowing for proper planning.
+            when expected.
           </p>
         </div>
 
@@ -241,17 +236,14 @@
             <img src="./assets/note.svg" alt="clock" />
           </div>
           <h3>We customize meals to suit your staff</h3>
-          <p>
-            We create menus that accommodate dietary preferences and
-            restrictions of your team.
-          </p>
+          <p>We create menus that accommodate youe team's preferences.</p>
         </div>
 
         <div class="diff-item">
           <div class="service-icons">
             <img src="./assets/payment.svg" alt="clock" />
           </div>
-          <h3>We offer flexible billing: daily or monthly</h3>
+          <h3>We offer flexible billing: daily, weekly or monthly</h3>
           <p>
             Choose the payment schedule that works best for your company's
             accounting processes.
@@ -292,9 +284,16 @@
             class="menu-view-btn"
             data-title="Signature Rice Dishes"
             data-img="./assets/jollofrice.jpeg"
-            data-items='[{"title":"Party Jollof Rice","desc":"Our signature smoky jollof rice with a rich tomato base"},{"title":"Coconuty Rice","desc":"Fragrant rice cooked in coconut milk with herbs"},{"title":"Fiesta Fried Rice","desc":"Colorful vegetable fried rice with a Nigerian twist"}]'
+            data-items='[
+            {"title": "Asun Jollof Rice", "desc": "Spicy jollof rice infused with fire-grilled  goat meat, delivering bold flavor and smoky heat in every bite"} ,
+            {"title":"Party Jollof Rice","desc":"Our signature smoky jollof rice with a rich tomato base"},
+            {"title":"Coconuty Rice","desc":"Fragrant rice cooked in coconut milk with herbs"},
+            {"title":"Fiesta Fried Rice","desc":"Colorful vegetable fried rice with a Nigerian twist"}
+          
+            
+            ]'
           >
-            View Details
+            View Details...
           </button>
         </div>
 
@@ -310,9 +309,16 @@
             class="menu-view-btn"
             data-title="Pasta & Specialty"
             data-img="./assets/pasta.jpg"
-            data-items='[{"title":"Jolly Jollof Pasta","desc":"Pasta cooked in our signature jollof sauce"},{"title":"Asun Jollof","desc":"Spicy peppered goat meat with jollof rice"},{"title":"Pasta Primavera","desc":"Fresh vegetable pasta with light cream sauce"}]'
+            data-items='[
+            {"title":"Jolly Jollof Pasta","desc":"Pasta cooked in our signature jollof sauce"},
+            {
+              "title": "Chicken Stir-Fried Pasta",
+              "desc": "Savory pasta tossed with seasoned chicken strips, crunchy veggies, and aromatic spices for a rich, stir-fried delight"
+            }
+            
+            ]'
           >
-            View Details
+            View Details...
           </button>
         </div>
 
@@ -327,9 +333,12 @@
             class="menu-view-btn"
             data-title="Soups & Swallows"
             data-img="./assets/afangsoup.jpeg"
-            data-items='[{"title":"Calabar Afang Soup","desc":"Traditional Cross River soup with vegetables"},{"title":"Egusi Soup","desc":"Classic Nigerian melon seed soup with assorted meat"},{"title":"Pounded Yam","desc":"Smooth, stretchy traditional swallow"}]'
+            data-items='[
+            {"title":"Calabar Afang Soup","desc":"Traditional Akwa Ibom soup with vegetables"},
+            {"title":"Egusi Soup","desc":"Classic Nigerian melon seed soup with assorted meat"},
+            {"title":"Pounded Yam, Semo and Eba","desc":"Smooth, stretchy traditional swallow"}]'
           >
-            View Details
+            View Details...
           </button>
         </div>
       </div>
@@ -377,7 +386,7 @@
             <h4>Volume Discounts</h4>
             <ul>
               <li>
-                <strong>20+ meals daily:</strong> Special discounted rates
+                <strong>60+ meals daily:</strong> Special discounted rates
               </li>
               <li><strong>Monthly subscription:</strong> Additional savings</li>
               <li>
@@ -392,31 +401,7 @@
             <ul>
               <li>Main dish with sides</li>
               <li>Quality disposable packaging</li>
-              <li>Delivery to your office</li>
               <li>Menu rotation</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Add-on Options -->
-        <div class="pricing-addons">
-          <h4>Add-on Options</h4>
-
-          <div class="addon-category">
-            <h5>Additional Protein</h5>
-            <ul>
-              <li>Extra Chicken — <strong>₦1,000</strong></li>
-              <li>Extra Fish — <strong>₦1,200</strong></li>
-              <li>Extra Beef — <strong>₦1,000</strong></li>
-            </ul>
-          </div>
-
-          <div class="addon-category">
-            <h5>Beverages</h5>
-            <ul>
-              <li>Soft Drinks — <strong>₦300</strong></li>
-              <li>Bottled Water — <strong>₦200</strong></li>
-              <li>Fresh Juice — <strong>₦500</strong></li>
             </ul>
           </div>
         </div>
@@ -476,65 +461,79 @@
     <section id="testimonials" class="testimonial-section" data-aos="fade-up">
       <h2>What Our Clients Are Saying</h2>
       <p>Real feedback from happy clients who trust us to fuel their teams.</p>
-      <div class="testimo">
-        <div class="gesture">
-          <img src="./assets/boy.png" alt="boy" />
-        </div>
-        <div class="testimonial-wrapper">
-          <div class="testimonial-carousel-wrapper">
-            <div class="testimonial-carousel">
-              <div class="testimonial-track">
-                <div class="testimonial-item">
-                  <img src="./assets/review1.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review2.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review3.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review4.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review5.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review6.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review7.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review8.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review9.jpeg" alt="Client feedback" />
-                </div>
-                <div class="testimonial-item">
-                  <img src="./assets/review10.jpeg" alt="Client feedback" />
-                </div>
-                <div>
-                  <img src="./assets/review11.jpeg" alt="Client feedback" />
-                </div>
+      <div class="testimonial-wrapper">
+        <div class="testimonial-carousel-wrapper">
+          <div class="testimonial-carousel">
+            <div class="testimonial-track">
+              <div class="testimonial-item">
+                <img src="./assets/review1.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review2.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review3.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review4.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review5.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review6.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review7.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review8.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review9.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review10.jpeg" alt="Client feedback" />
+              </div>
+              <div class="testimonial-item">
+                <img src="./assets/review11.jpeg" alt="Client feedback" />
               </div>
             </div>
           </div>
-
-          <div class="trusted-companies">
-            <h3>Trusted by forward-thinking companies</h3>
-            <ul>
-              <li><img src="./assets/tek.png" alt="NovaCorp" /></li>
-              <li><img src="./assets/sparkles.png" alt="ThinkTech" /></li>
-              <li>
-                <img src="./assets/OvuaComp_logo_black.png" alt="PixelRise" />
-              </li>
-            </ul>
-          </div>
         </div>
 
-        <div class="gesture">
-          <img src="./assets/girl.png" alt="girl" />
+        <div class="trusted-companies">
+          <h3>Trusted by forward-thinking companies</h3>
+          <ul>
+            <li>
+              <img
+                class="theme-img"
+                src="./assets/tek.jpeg"
+                data-img-light="./assets/tek.jpeg"
+                data-img-dark="./assets/tek-dark.jpeg"
+                alt="tek"
+              />
+            </li>
+            <li>
+              <img
+                class="theme-img"
+                src="./assets/sparkles.jpeg"
+                data-img-light="./assets/sparkles.jpeg"
+                data-img-dark="./assets/sparkles-dark.jpeg"
+                alt="sparkles"
+              />
+            </li>
+
+            <li>
+              <img
+                class="theme-img"
+                src="./assets/property-gate.jpeg"
+                data-img-light="./assets/property-gate.jpeg"
+                data-img-dark="./assets/property-gate-dark.jpeg"
+                alt="PixelRise"
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -557,19 +556,21 @@
 
         <!-- Contact Info -->
         <div class="footer-contact">
-          <div class="contact-info-item">
-            <img src="./assets/locaton.svg" alt="location" />
-            <span>Lagos, Nigeria</span>
-          </div>
-          <div class="contact-info-item">
-            <img src="./assets/phone.svg" alt="phone" />
-            <span>09023189602</span>
-          </div>
-          <div class="contact-info-item">
-            <img src="./assets/mail.svg" alt="email" />
-            <a href="mailto:resswellservices@gmail.com">
-              resswellservices@gmail.com
-            </a>
+          <div class="footer-contact-item">
+            <div class="contact-info-item">
+              <img src="./assets/locaton.svg" alt="location" />
+              <span>Lagos, Nigeria</span>
+            </div>
+            <div class="contact-info-item">
+              <img src="./assets/phone.svg" alt="phone" />
+              <span>09023189602</span>
+            </div>
+            <div class="contact-info-item">
+              <img src="./assets/mail.svg" alt="email" />
+              <a href="mailto:resswellservices@gmail.com">
+                resswellservices@gmail.com
+              </a>
+            </div>
           </div>
 
           <!-- Social Icons -->
@@ -589,15 +590,30 @@
               <img src="./assets/instagram.svg" alt="Instagram" />
             </a>
           </div>
+
+          <p class="dev-credit">
+            <br />
+            Developed by
+            <a
+              href="https://wa.me/2347013723537"
+              target="_blank"
+              title="Chat with OVUA on WhatsApp"
+              style="color: inherit; text-decoration: underline"
+              class="dev-link"
+            >
+              OVUA
+            </a>
+          </p>
         </div>
       </div>
-
-      <!-- Back to Top Button -->
-      <button id="backToTop" class="back-to-top" title="Back to Top">↑</button>
     </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to Top">↑</button>
 
-    <script>
-      AOS.init();
-    </script>
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Your Script -->
+    <script src="script.js"></script>
   </body>
 </html>
