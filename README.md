@@ -6,7 +6,7 @@ A professional, responsive website for **Resswell Services**, a Lagos-based cate
 
 ---
 
-## ✨ Features
+##  Features
 
 - Fully responsive and mobile-friendly layout
 - Theme toggle (Light/Dark Mode)
@@ -19,7 +19,7 @@ A professional, responsive website for **Resswell Services**, a Lagos-based cate
 
 ---
 
-## 📁 Technologies Used
+##  Technologies Used
 
 - **HTML5** – Semantic, accessible markup
 - **CSS3** – Organized with BEM-style structure
@@ -29,7 +29,7 @@ A professional, responsive website for **Resswell Services**, a Lagos-based cate
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 To clone and run this project locally:
 
