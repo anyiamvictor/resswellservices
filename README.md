@@ -2,11 +2,11 @@
 
 A professional, responsive website for **Resswell Services**, a Lagos-based catering brand specializing in corporate lunch delivery, event catering, and cafeteria management.
 
-🌐 **Live Site**: [resswellservices.com](https://resswellservices.com)
+🌐 **Live Site**: [resswellcatering.com](https://resswellcatering.com)
 
 ---
 
-##  Features
+## Features
 
 - Fully responsive and mobile-friendly layout
 - Theme toggle (Light/Dark Mode)
@@ -19,7 +19,7 @@ A professional, responsive website for **Resswell Services**, a Lagos-based cate
 
 ---
 
-##  Technologies Used
+## Technologies Used
 
 - **HTML5** – Semantic, accessible markup
 - **CSS3** – Organized with BEM-style structure
@@ -29,7 +29,7 @@ A professional, responsive website for **Resswell Services**, a Lagos-based cate
 
 ---
 
-##  Getting Started
+## Getting Started
 
 To clone and run this project locally:
 
@@ -40,11 +40,11 @@ open index.html
 
 ## 🧑‍💻 Developer
 
-**Website designed and developed by [OVUA](https://wa.me/2347013723537) (anyiamvictor)**  
+**Website designed and developed by [OVUA](https://wa.me/2347013723537) (anyiamvictor)**
 For inquiries or custom builds, feel free to reach out:
 
-- 📧 Email: [anyiamvictor.com](mailto:anyiamvictor.com)  
-- 📍 Location: Lagos, Nigeria  
+- 📧 Email: [anyiamvictor.com](mailto:anyiamvictor.com)
+- 📍 Location: Lagos, Nigeria
 - 💬 WhatsApp: [+2347013723537](https://wa.me/2347013723537)
 
 
@@ -56,3 +56,4 @@ Feel free to use, modify, or distribute with attribution.
 markdown
 Copy
 Edit
+```
