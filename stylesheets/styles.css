@@ -1798,9 +1798,17 @@ overflow:hidden;
   padding: 0;
 }
 
+.trusted-companies li  {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+width:200px;
+
+}
+
 .trusted-companies li img {
-  width:90px;
-  height: 90px;
+  width:100%;
+  height: auto;
   object-fit:contain;
   opacity: 0.8;
   transition: opacity 0.3s ease, filter 0.3s ease;
@@ -1891,17 +1899,20 @@ overflow:hidden;
   .trusted-companies ul {
     gap: 1rem;
     padding: 0;
-    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
+
+    .trusted-companies li {
+      width: 150px;
+  
+    }
+
+
 
   .trusted-companies li img {
-    width: 90px;
-    border: 1px solid var(--bg);
-    padding: 5px;
+    width: 100%;
   }
-
-
 
     .testimonial-item:hover img {
       transform: scale(2); /* increased zoom */
