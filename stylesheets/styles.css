@@ -1904,7 +1904,10 @@ width:200px;
   }
 
     .trusted-companies li {
-      width: 150px;
+      width: 100px;
+      height:100px;
+      padding:0px;
+      /* border:1px solid red */
   
     }
 
@@ -1912,7 +1915,7 @@ width:200px;
 
   .trusted-companies li img {
     width: 100%;
-  }
+    height: auto;
 
     .testimonial-item:hover img {
       transform: scale(2); /* increased zoom */
